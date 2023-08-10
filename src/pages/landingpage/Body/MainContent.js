@@ -64,7 +64,7 @@ const OurWork = () => {
 
     }
     const changeTextHandlerOnHover = (ele, index) => {
-        setChangeOnHover("")
+        setChangeOnHover(ele.id)
 
     }
 

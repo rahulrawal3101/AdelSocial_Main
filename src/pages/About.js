@@ -10,9 +10,7 @@ import mobileapp from '../assets/mobileapp.png'
 import web1 from '../assets/webapp.png';
 import landing from '../assets/landing.png'
 import webdev from '../assets/webdev.png'
-
 import "react-multi-carousel/lib/styles.css";
-
 import Header from '../components/Header';
 import SidebarDrawer from '../global/SidebarDrawer';
 import Footer from '../components/Footer';

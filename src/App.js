@@ -64,7 +64,7 @@ How can we help?`}
       />
       <Router>
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/" element={<LandingLayout />} />
           <Route exact path="contact" element={<ContactUs />} />
           <Route exact path="about" element={<About />} />
           <Route exact path="itservices" element={<HireDevelopers />} />

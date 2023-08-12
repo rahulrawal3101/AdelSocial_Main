@@ -122,10 +122,13 @@ const HireDevelopers = () => {
 
     return (
 
-        <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
-            <SidebarDrawer currentPage="services" />
+        // <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
+        //     <SidebarDrawer currentPage="services" />
+        <>
+
+
             <Header />
-            <Container disableGutters maxWidth>
+            <Container disableGutters >
                 <Grid container sx={{ backgroundImage: `url(${hireDeveloper})`, backgroundBlendMode: "multiply", backgroundRepeat: "no-repeat", backgroundSize: "cover", bgcolor: "rgba(0, 0, 0, 0.5)", p: "50px", pt: '90px', }}>
                     <Grid item xs={2} sm={2} md={1} lg={1} >
 
@@ -230,9 +233,9 @@ const HireDevelopers = () => {
                 <Grid container sx={{ mt: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <Grid item container xs={12} sm={12} md={9} lg={8.1} spacing={3} p="20px">
                         {
-                            langauageMap.map(() => {
+                            langauageMap.map((_, index) => {
                                 return (
-                                    <Grid item xs={12} sm={12} md={6} lg={4}>
+                                    <Grid key={index} item xs={12} sm={12} md={6} lg={4}>
                                         <Paper sx={{ p: "15px" }} elevation={3}>
                                             <Typography sx={{ display: "flex", alignItems: "center", justifyContent: "left", fontSize: "20px" }}><CoffeeIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "35px" }} />
                                                 HIRE PROJECT MANAGER
@@ -259,10 +262,10 @@ const HireDevelopers = () => {
                     <Box sx={{ display: "flex", justifyContent: "center", mt: "30px" }}>
                         <Grid container sx={{ width: { xs: "90%", sm: "90%", md: "68%", lg: "68%" } }} spacing={3}>
                             {
-                                netInfo3.map((ele) => {
+                                netInfo3.map((ele, index) => {
                                     return (
 
-                                        <Grid item xs={12} sm={12} md={6} lg={4} sx={{ p: "15px 10px 15px 10px", lineHeight: "2" }}>
+                                        <Grid key={index} item xs={12} sm={12} md={6} lg={4} sx={{ p: "15px 10px 15px 10px", lineHeight: "2" }}>
                                             <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "100px", width: "100px", borderRadius: "100%" }}>
                                                 {ele.icon}
                                             </Box>
@@ -289,9 +292,9 @@ const HireDevelopers = () => {
                     <Grid item xs={12} sx={{ display: "flex", justifyContent: "center", mt: "30px" }}>
                         <Grid container sx={{ width: { xs: "90%", sm: "90%", md: "68%", lg: "68%" } }} spacing={3}>
                             {
-                                netInfo.map((ele) => {
+                                netInfo.map((ele, index) => {
                                     return (
-                                        <Grid item xs={12} sm={6} md={3} lg={3} sx={{ borderLeft: `6px solid ${MAIN_COLOR}`, p: "15px 10px 15px 10px", lineHeight: "2", m: "15px" }}>
+                                        <Grid key={index} item xs={12} sm={6} md={3} lg={3} sx={{ borderLeft: `6px solid ${MAIN_COLOR}`, p: "15px 10px 15px 10px", lineHeight: "2", m: "15px" }}>
                                             <Box>
                                                 {ele.icon}
                                             </Box>
@@ -311,7 +314,7 @@ const HireDevelopers = () => {
                 <Footer />
 
             </Container>
-        </div>
+        </>
 
     )
 }

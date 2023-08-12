@@ -14,8 +14,10 @@ import { MAIN_COLOR } from '../constant';
 const ContactUs = () => {
     const { state, dispatch } = useContext(AdelContext)
     return (
-        <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
-            <SidebarDrawer currentPage="contact" />
+        <>
+
+            {/* // <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
+        //     <SidebarDrawer currentPage="contact" /> */}
             <Header />
             <Grid container >
 
@@ -84,7 +86,7 @@ const ContactUs = () => {
                                         </Box>
                                     </Grid>
                                     <Grid item lg={12} md={12} sm={12} xs={12} >
-                                        <Typography sx={{ fontSize: '15px', fontWeight: '600', mt: '20px' }}>Note: I consent that my personal data will be processed according to <sapn style={{ color: '#1976d2' }}>AdelSocial' privacy policy </sapn>  </Typography>
+                                        <Typography sx={{ fontSize: '15px', fontWeight: '600', mt: '20px' }}>Note: I consent that my personal data will be processed according to <span style={{ color: '#1976d2' }}>AdelSocial' privacy policy </span>  </Typography>
                                     </Grid>
                                     <Grid item xs={12} sx={{ textAlign: 'right', mt: { lg: "2px", md: '3px', sm: '5px', xs: '6px' } }}>
                                         <Button variant='contained' sx={{ borderRadius: '10px', padding: '8px 17px' }}>Submit</Button>
@@ -121,7 +123,8 @@ const ContactUs = () => {
             </Grid >
             <SendMessage />
             <Footer />
-        </div>
+        </>
+
     )
 }
 

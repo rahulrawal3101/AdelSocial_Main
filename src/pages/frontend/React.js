@@ -1,20 +1,19 @@
+import Diversity1Icon from '@mui/icons-material/Diversity1'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import HubIcon from '@mui/icons-material/Hub'
+import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices'
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
-import TopBanner from '../../assets/TopBanner.jpg'
-import react from '../../assets/reactjs.png'
-import web from '../../assets/web-design.jpg'
-import core from '../../assets/corestrenth.jpg'
-import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
-import hiring from '../../assets/hiring-modal-one.jpg'
-import hiring2 from '../../assets/hiring-modal-two.png'
-import hiring3 from '../../assets/hiring-modal-three.jpg'
-import HubIcon from '@mui/icons-material/Hub';
 import background8 from '../../assets/background-8.png'
-import Diversity1Icon from '@mui/icons-material/Diversity1';
+import core from '../../assets/corestrenth.jpg'
+import hiring from '../../assets/hiring-modal-one.jpg'
+import hiring3 from '../../assets/hiring-modal-three.jpg'
+import hiring2 from '../../assets/hiring-modal-two.png'
+import react from '../../assets/reactjs.png'
 import vector from '../../assets/vacter_right.png'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Header from '../../components/Header'
+import web from '../../assets/web-design.jpg'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import { MAIN_COLOR } from '../../constant'
 
 
@@ -57,7 +56,7 @@ const ReactFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4} sx={{ p: "15px" }}>
                         <Box sx={{ height: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={web} height="100%" width="100%" />
+                            <img src={web} height="100%" width="100%" alt='web' />
                         </Box>
                     </Grid>
                 </Grid>
@@ -85,7 +84,7 @@ const ReactFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4.4} sx={{ mt: "15px", display: "flex", justifyContent: "right", p: "15px" }}>
                         <Box sx={{ height: "300px", width: "70%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={core} height="100%" width="100%" />
+                            <img src={core} height="100%" width="100%" alt='core' />
                         </Box>
                     </Grid>
                 </Grid>
@@ -150,7 +149,7 @@ const ReactFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring} height="100%" width="100%" />
+                            <img src={hiring} height="100%" width="100%" alt='hire1'/>
                         </Box>
                     </Grid>
 
@@ -160,7 +159,7 @@ const ReactFrontend = () => {
                     <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring2} height="100%" width="100%" />
+                            <img src={hiring2} height="100%" width="100%" alt='hire2' />
                         </Box>
                     </Grid>
 
@@ -190,7 +189,7 @@ const ReactFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring3} height="100%" width="100%" />
+                            <img src={hiring3} height="100%" width="100%" alt='hire3'/>
                         </Box>
                     </Grid>
 

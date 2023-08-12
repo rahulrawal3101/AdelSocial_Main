@@ -7,7 +7,7 @@ export const reducer = (state, action) => {
         case 'PROPOSAL':
             return { ...state, propasal_input: action.payload }
         case 'DRAWER_CLICKED':
-            return { ...state, drawer_opened: !action.payload }
+            return { ...state, drawer_opened:action.payload }
         case 'MODAL_ACTION':
             return { ...state, modal_open: action.payload }
         default:

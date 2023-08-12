@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9575163.css",
-    "main.js": "/static/js/main.ce1c7d6f.js",
+    "main.css": "/static/css/main.5f1fec7e.css",
+    "main.js": "/static/js/main.9a599f56.js",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/hireDeveloper.jpg": "/static/media/hireDeveloper.75688cd842694a4714b7.jpg",
     "static/media/reactnative.jpg": "/static/media/reactnative.f3e964a434ef76a83392.jpg",
@@ -68,7 +68,6 @@
     "static/media/b2b-ecommerce.png": "/static/media/b2b-ecommerce.a58e5e8bc0f49430c9ca.png",
     "static/media/cyber1.jpeg": "/static/media/cyber1.914b70b6393e59c427c8.jpeg",
     "static/media/adellogo.png": "/static/media/adellogo.774677c77c9615bd7979.png",
-    "static/media/logo.png": "/static/media/logo.774677c77c9615bd7979.png",
     "static/media/angular2.png": "/static/media/angular2.e26290e2f462535adef4.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -78,7 +77,6 @@
     "static/media/third.svg": "/static/media/third.6a2782a6146ab71ddf18b606b7d76bee.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/second.svg": "/static/media/second.7299f71995009661459f6e9de6d77d1a.svg",
-    "static/media/Java-Web-Development.webp": "/static/media/Java-Web-Development.e7036f179f6bf1b0a622.webp",
     "static/media/first.svg": "/static/media/first.5206c5260a55b7892d0fed559114a71e.svg",
     "static/media/five.svg": "/static/media/five.6a3cdfc6d77c18333f4dfc25a17a0278.svg",
     "static/media/fourth.svg": "/static/media/fourth.2808df609cb246cbb6468dc4df0c29a6.svg",
@@ -89,11 +87,11 @@
     "static/media/team.svg": "/static/media/team.41b7cefc28f767a14171ccd6cc1816ee.svg",
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
-    "main.d9575163.css.map": "/static/css/main.d9575163.css.map",
-    "main.ce1c7d6f.js.map": "/static/js/main.ce1c7d6f.js.map"
+    "main.5f1fec7e.css.map": "/static/css/main.5f1fec7e.css.map",
+    "main.9a599f56.js.map": "/static/js/main.9a599f56.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9575163.css",
-    "static/js/main.ce1c7d6f.js"
+    "static/css/main.5f1fec7e.css",
+    "static/js/main.9a599f56.js"
   ]
 }

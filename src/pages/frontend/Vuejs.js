@@ -1,19 +1,18 @@
+import Diversity1Icon from '@mui/icons-material/Diversity1'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import HubIcon from '@mui/icons-material/Hub'
+import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices'
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, Paper, Typography } from '@mui/material'
-import TopBanner from '../../assets/TopBanner.jpg'
+import background8 from '../../assets/background-8.png'
+import core from '../../assets/corestrenth.jpg'
+import hiring from '../../assets/hiring-modal-one.jpg'
+import hiring3 from '../../assets/hiring-modal-three.jpg'
+import hiring2 from '../../assets/hiring-modal-two.png'
+import vector from '../../assets/vacter_right.png'
 import vuejs from '../../assets/vuejs.png'
 import web from '../../assets/web-design.jpg'
-import core from '../../assets/corestrenth.jpg'
-import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
-import hiring from '../../assets/hiring-modal-one.jpg'
-import hiring2 from '../../assets/hiring-modal-two.png'
-import hiring3 from '../../assets/hiring-modal-three.jpg'
-import HubIcon from '@mui/icons-material/Hub';
-import background8 from '../../assets/background-8.png'
-import Diversity1Icon from '@mui/icons-material/Diversity1';
-import vector from '../../assets/vacter_right.png'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import { MAIN_COLOR } from '../../constant'
 
 
@@ -56,7 +55,7 @@ const VueFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4} sx={{ p: "15px" }}>
                         <Box sx={{ height: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={web} height="100%" width="100%" />
+                            <img src={web} height="100%" width="100%" alt='web' />
                         </Box>
                     </Grid>
                 </Grid>
@@ -84,7 +83,7 @@ const VueFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4.4} sx={{ mt: "15px", display: "flex", justifyContent: "right", p: "15px" }}>
                         <Box sx={{ height: "300px", width: "70%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={core} height="100%" width="100%" />
+                            <img alt='core' src={core} height="100%" width="100%" />
                         </Box>
                     </Grid>
                 </Grid>
@@ -149,7 +148,7 @@ const VueFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring} height="100%" width="100%" />
+                            <img alt='hire' src={hiring} height="100%" width="100%" />
                         </Box>
                     </Grid>
 
@@ -159,7 +158,7 @@ const VueFrontend = () => {
                     <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring2} height="100%" width="100%" />
+                            <img alt='hiring' src={hiring2} height="100%" width="100%" />
                         </Box>
                     </Grid>
 
@@ -189,7 +188,7 @@ const VueFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring3} height="100%" width="100%" />
+                            <img alt='hire3' src={hiring3} height="100%" width="100%" />
                         </Box>
                     </Grid>
 

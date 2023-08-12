@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, TextField, Typography } from '@mui/material'
-import React from 'react'
-import adel from '../assets/logo.png'
+import React, { useContext } from 'react'
+// import adel from '../assets/logo.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -8,9 +8,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { HOVER_COLOR, MAIN_COLOR } from '../constant';
 import { useNavigate } from 'react-router-dom';
-
+import logo from '../assets/logoMainu.png'
+import { AdelContext } from '../store/Context';
 
 const Footer = () => {
+    const {state}=useContext(AdelContext)
     const navigate = useNavigate()
     const companyArray = [{ title: 'Home', path: '/' }, { title: 'Service', path: '/itservices' }, { title: 'Portfolio', path: '/' }, { title: 'Contact', path: '/contact' }].map((item, index) => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{
@@ -63,9 +65,9 @@ const Footer = () => {
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center' }}>
-                    <Box sx={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }}>
-                            <img src={adel} height="70px" width="100%" style={{ marginLeft: "-32px", }} alt='pic' />
+                    <Box sx={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+                        <Box sx={{ width: "100%",display: 'flex', justifyContent: 'center',}}>
+                            <img src={logo} height="90px" width="90%"  alt='pic'  />
                         </Box>
                         <Box sx={{ display: "flex", mt: "40px", justifyContent: "space-between", width: "70%", alignItems: 'center' }}>
                             {socialIcons}
@@ -73,7 +75,7 @@ const Footer = () => {
                     </Box>
                 </Grid>
             </Grid>
-            <Grid container sx={{ p: '20px', justifyContent: 'center', bgcolor: '#404343' }}>
+            <Grid container sx={{ p: '20px', justifyContent: 'center', bgcolor: '#404343',mb:state.currentScreenSize<=900?"55px":"0px"}}>
                 <Typography textAlign={'center'} sx={{ fontSize: "14px", color: '#c3c3c3' }}>Copyright © 2023 AdelSocial | All rights reserved</Typography>
             </Grid>
         </>

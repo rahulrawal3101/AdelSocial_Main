@@ -303,7 +303,7 @@ const DotNet = () => {
                 </Grid>
 
 
-                {/* <Grid className='dotnetPage' item xs={12} sx={{ pb: "40px", bgcolor: "#f1f1f1", display: "flex", justifyContent: "center" }}>
+                <Grid className='dotnetPage' item xs={12} sx={{ pb: "40px", bgcolor: "#f1f1f1", display: "flex", justifyContent: "center" }}>
                         <Box className='dotnetPage' sx={{ borderRadius: '60px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, mt: "50px", p: '30px' }}>
                             <Typography sx={{ fontSize: { xs: "30px", lg: '40px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Looking to Hire Dot NET Developers? You’re at the Right Spot
@@ -769,7 +769,7 @@ const DotNet = () => {
                     </Grid>
 
 
-                </Grid> */}
+
                 <Footer />
 
             </Container >

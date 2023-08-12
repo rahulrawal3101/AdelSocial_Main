@@ -55,7 +55,7 @@ const NodeFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4} sx={{ p: "15px" }}>
                         <Box sx={{ height: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={web} height="100%" width="100%" />
+                            <img   alt="img" src={web} height="100%" width="100%" />
                         </Box>
                     </Grid>
                 </Grid>
@@ -83,7 +83,7 @@ const NodeFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4.4} sx={{ mt: "15px", display: "flex", justifyContent: "right", p: "15px" }}>
                         <Box sx={{ height: "300px", width: "70%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={core} height="100%" width="100%" />
+                            <img   alt="img" src={core} height="100%" width="100%" />
                         </Box>
                     </Grid>
                 </Grid>
@@ -148,7 +148,7 @@ const NodeFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring} height="100%" width="100%" />
+                            <img   alt="img" src={hiring} height="100%" width="100%" />
                         </Box>
                     </Grid>
 
@@ -158,7 +158,7 @@ const NodeFrontend = () => {
                     <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring2} height="100%" width="100%" />
+                            <img   alt="img" src={hiring2} height="100%" width="100%" />
                         </Box>
                     </Grid>
 
@@ -188,7 +188,7 @@ const NodeFrontend = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
                         <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring3} height="100%" width="100%" />
+                            <img   alt="img" src={hiring3} height="100%" width="100%" />
                         </Box>
                     </Grid>
 

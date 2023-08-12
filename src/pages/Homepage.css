@@ -3,7 +3,11 @@ html{
   padding:0
 }
 /* start dotnet */
-
+.whatsappButton{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
 .dotnetPage{
 background: #4b6cb7;  
 background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  

@@ -64,7 +64,7 @@ const OurWork = () => {
 
     }
     const changeTextHandlerOnHover = (ele, index) => {
-        setChangeOnHover(ele.id)
+        setChangeOnHover('')
 
     }
 
@@ -86,17 +86,17 @@ const OurWork = () => {
                     </Grid>
                     <Grid container sx={{ justifyContent: 'space-between', alignItems: 'flex-start', padding: '20px', mt: '2.5rem' }}>
                         <Grid item lg={5.5} md={5.5} sm={12} xs={12} >
-                            <Typography variant='h2' sx={{ color: 'white', fontSize: { lg: '41px', md: '35px', sm: '33px', xs: '30px' }, fontFamily: 'cursive', wordSpacing: '3px', mt: '6px' }}>Your story is the essence of why people buy your product or engage your service. It’s the special little bit that takes someone from considering their options, to taking the plunge with a particular business.</Typography>
+                            <Typography variant='h2' sx={{ color: 'white', fontSize: { lg: '33px', md: '33px', sm: '30px', xs: '22px' }, wordSpacing: '3px', mt: '6px' }}>Your story is the essence of why people buy your product or engage your service. It’s the special little bit that takes someone from considering their options, to taking the plunge with a particular business.</Typography>
 
                         </Grid>
                         <Grid item lg={2.6} md={2.6} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '10px' } }}>
-                            <Typography sx={{ fontSize: { lg: '15px', md: '14px', sm: '14px', xs: '14px' }, color: 'white', wordSpacing: '2px', fontFamily: 'BlinkMacSystemFont' }}>A story is how you build trust, and connect with your customers. It’s the difference between cheap and low quality, or a great deal on a great product. </Typography>
-                            <Typography sx={{ fontSize: { lg: '15px', md: '14px', sm: '14px', xs: '14px' }, color: 'white', wordSpacing: '2px', mt: '15px', fontFamily: 'BlinkMacSystemFont' }}>Our work as digital marketing consultants is telling your story. A story like that isn’t something that happens overnight, in one sitting or even in one revision. It’s not a process that can be scaled up and mass produced- it’s a journey, and an artform.</Typography>
+                            <Typography sx={{ fontSize: { lg: '15px', md: '15px', sm: '15px', xs: '15px' }, color: 'white', wordSpacing: '2px', fontFamily: 'BlinkMacSystemFont' }}>A story is how you build trust, and connect with your customers. It’s the difference between cheap and low quality, or a great deal on a great product. </Typography>
+                            <Typography sx={{ fontSize: { lg: '15px', md: '15px', sm: '15px', xs: '15px' }, color: 'white', wordSpacing: '2px', mt: '15px', fontFamily: 'BlinkMacSystemFont' }}>Our work as digital marketing consultants is telling your story. A story like that isn’t something that happens overnight, in one sitting or even in one revision. It’s not a process that can be scaled up and mass produced- it’s a journey, and an artform.</Typography>
 
                         </Grid>
                         <Grid item lg={2.6} md={2.6} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '10px' } }}>
-                            <Typography sx={{ fontSize: { lg: '15px', md: '14px', sm: '14px', xs: '14px' }, color: 'white', wordSpacing: '2px', fontFamily: 'BlinkMacSystemFont' }}>A rich, engaging and vibrant story told with passion and vigour is what transforms your business from a place transactions occur, to something that people hold on to, and keep coming back to time and again. It’s the secret ingredient that creates loyal customers and leaves them craving more.</Typography>
-                            <Typography sx={{ fontSize: { lg: '15px', md: '14px', sm: '14px', xs: '14px' }, color: 'white', wordSpacing: '2px', mt: '2rem', fontFamily: 'BlinkMacSystemFont' }}>Let us tell your story.</Typography>
+                            <Typography sx={{ fontSize: { lg: '15px', md: '15px', sm: '15px', xs: '15px' }, color: 'white', wordSpacing: '2px', fontFamily: 'BlinkMacSystemFont' }}>A rich, engaging and vibrant story told with passion and vigour is what transforms your business from a place transactions occur, to something that people hold on to, and keep coming back to time and again. It’s the secret ingredient that creates loyal customers and leaves them craving more.</Typography>
+                            <Typography sx={{ fontSize: { lg: '15px', md: '15px', sm: '15px', xs: '15px' }, color: 'white', wordSpacing: '2px', mt: '2rem', fontFamily: 'BlinkMacSystemFont' }}>Let us tell your story.</Typography>
 
                         </Grid>
 
@@ -110,10 +110,7 @@ const OurWork = () => {
                     <Grid item lg={5.5} md={5.5} sm={12} xs={12} sx={{ backgroundImage: `url(${ship})`, backgroundSize: 'cover', backgroundPosition: 'center', height: { lg: '620px', md: '600px', sm: '450px', xs: '350px' }, display: 'flex', alignItems: 'flex-end', boxShadow: 'inset 1px 1px 49px 0px rgba(0,0,0,0.75)', cursor: 'pointer', backgroundColor: change === true ? 'rgb(90,90,90)' : 'transparent', backgroundBlendMode: change === true ? "multiply" : '' }}>
                         <Box sx={{ width: '96.5%', padding: '10px', height: '100%', }} onMouseOver={changeHandler} onMouseOut={changeTextHandler}>
                             <Box sx={{ width: '100%', height: '90%', display: change === true ? 'flex' : 'none', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
-                                {/* <Typography variant='h1' sx={{ fontSize: { lg: '60px', md: '50px', sm: '30px', xs: '26px' }, color: 'white', fontFamily: 'sans-serif', wordSpacing: '10px', fontWeight: '600' }}>TRUE NORTH</Typography>
-                                        <ArrowUpwardIcon sx={{ fontSize: { lg: '8rem', md: '6rem', sm: '4rem', xs: '4rem' }, color: 'white', fontWeight: '600' }} />
 
-                                        <Typography variant='h1' sx={{ color: 'white', fontFamily: 'sans-serif', wordSpacing: '10px', fontWeight: '600', fontSize: { lg: '8rem', md: '5rem', sm: '4rem', xs: '4rem' } }}>N</Typography> */}
                                 <img src={hover} alt='N' height={'60%'} width={'70%'} />
 
                             </Box>
@@ -138,7 +135,7 @@ const OurWork = () => {
 
 
 
-                                                <Box sx={{ display: ChangeOnHover === imgdata[index].id ? 'none' : 'flex', justifyContent: 'space-between', alignItems: 'center', width: '95%', padding: '10px', }}>
+                                                <Box sx={{ display: ChangeOnHover === imgdata[index].id ? 'none' : 'flex', justifyContent: 'space-between', alignItems: 'center', width: { lg: '95%', md: '92%', sm: '90%', xs: '90%' }, padding: '10px', }}>
 
                                                     <Typography sx={{ color: 'white', fontSize: { lg: '17px', md: '15px', sm: '15px', xs: '13px' }, fontWeight: '900', fontFamily: 'sans-serif' }}>{ele.text}</Typography>
                                                     <TrendingFlatIcon fontSize='large' sx={{ color: 'white', }} />

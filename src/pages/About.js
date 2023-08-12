@@ -124,34 +124,34 @@ const About = () => {
                         <Typography variant='h1' sx={{ color: 'white', fontSize: { lg: '41px', xs: '20px' }, fontWeight: '600', mt: '15px' }}>LET'S REALISE YOUR <br /><span style={{ color: MAIN_COLOR }}>DIGITAL</span> BUSINESS NOW</Typography>
                         <hr></hr>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                            <Typography sx={{ color: 'grey', fontSize: '15px', mt: '5px' }}>HOW LONG IS YOUR EXPEREIENCE</Typography>
-                            <Typography sx={{ color: 'grey', fontSize: '15px', mt: '5px' }}>WE HAVE 10 YEARS EXPEREIENCE</Typography>
+                            <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '14px', xs: '13px' }, mt: '5px' }}>HOW LONG IS YOUR EXPEREIENCE</Typography>
+                            <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '14px', xs: '13px' }, mt: '5px' }}>WE HAVE 10 YEARS EXPEREIENCE</Typography>
                         </Box>
 
                     </Grid>
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
                         <Grid item xs={9.5} sx={{ height: { lg: '430px', xs: '320px' }, mt: '-15rem', backgroundBlendMode: 'multiply', backgroundImage: `url(${adelteam})`, borderRadius: '20px', backgroundSize: { lg: 'cover', xs: '300px 300px' }, backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-                            {/* <img src={adelteam} alt='team' height={'100%'} width={'100%'} style={{ borderRadius: '20px' }} /> */}
+
 
                         </Grid>
 
-                        <Grid item xs={9.5} sx={{ mt: '20px' }}>
+                        <Grid item xs={9.5} sx={{ mt: '10px' }}>
                             <Grid container sx={{ padding: '10px 0px', borderRadius: "20px", border: '3.5px solid black', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }} >
                                 <Grid item lg={3} md={12} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                     <Typography variant='h2' sx={{ fontSize: { lg: '30px', md: '25px', sm: '22px', xs: '23px' }, fontWeight: '600', color: MAIN_COLOR }}>Our Milestone</Typography>
 
                                 </Grid>
-                                <Grid item lg={2} md={3} sm={3} xs={3} sx={{ textAlign: 'center', border: '2px solid black', borderRadius: '20px', mr: '6px', padding: '10px' }}>
+                                <Grid item lg={2} md={3} sm={3} xs={3.5} sx={{ textAlign: 'center', border: '2px solid black', borderRadius: '20px', mr: '6px', padding: '10px', ml: '8px' }}>
                                     <Typography sx={{ fontSize: { lg: '25px', md: '22', sm: '20px', xs: '18px' }, fontWeight: '600' }}>300<span style={{ color: MAIN_COLOR }}>+</span></Typography>
-                                    <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '12px', xs: '10px' } }}>Product</Typography>
+                                    <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '12px', xs: '9px' } }}>Product</Typography>
                                 </Grid>
-                                <Grid item lg={2} md={3} sm={3} xs={3} sx={{ textAlign: 'center', border: '2px solid black', borderRadius: '20px', mr: '6px', padding: '10px' }}>
+                                <Grid item lg={2} md={3} sm={3} xs={3.5} sx={{ textAlign: 'center', border: '2px solid black', borderRadius: '20px', mr: '6px', padding: '10px' }}>
                                     <Typography sx={{ fontSize: { lg: '25px', md: '22', sm: '20px', xs: '18px' }, fontWeight: '600' }}>300<span style={{ color: MAIN_COLOR }}>+</span></Typography>
-                                    <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '12px', xs: '10px' } }}>Testimonials</Typography>
+                                    <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '12px', xs: '9px' } }}>Testimonials</Typography>
                                 </Grid>
-                                <Grid item lg={2} md={3} sm={3} xs={3} sx={{ textAlign: 'center', border: '2px solid black', borderRadius: '20px', mr: '6px', padding: '10px' }}>
+                                <Grid item lg={2} md={3} sm={3} xs={3.5} sx={{ textAlign: 'center', border: '2px solid black', borderRadius: '20px', mr: '6px', padding: '10px' }}>
                                     <Typography sx={{ fontSize: { lg: '25px', md: '22', sm: '20px', xs: '18px' }, fontWeight: '600' }}>300<span style={{ color: MAIN_COLOR }}>+</span></Typography>
-                                    <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '12px', xs: '10px' } }}>Experience</Typography>
+                                    <Typography sx={{ color: 'grey', fontSize: { lg: '15px', md: '14px', sm: '12px', xs: '9px' } }}>Experience</Typography>
                                 </Grid>
 
                             </Grid>

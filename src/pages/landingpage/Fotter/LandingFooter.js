@@ -1,12 +1,12 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { BG_COLOR, LANDING_COLOR } from '../config';
-import logo from '../../../assets/logoMain.png'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { Box, Button, Grid, Typography } from '@mui/material';
+import logo from '../../../assets/logoMainu.png';
 import { MOBILE } from '../../../constant';
+import { BG_COLOR, LANDING_COLOR } from '../config';
 
 const LandingFooter = () => {
     const lookingSec = [
@@ -59,12 +59,13 @@ const LandingFooter = () => {
                         <Typography sx={{ fontSize: "30px", fontWeight: "700", color: "#151515" }}>Looking For</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={6} lg={4} sx={{}}>
+                    {/* footerMap */}
                         <Box sx={{ mt: "25px" }}>
 
                             {
-                                lookingSec.map((ele) => {
+                                lookingSec.map((ele,index) => {
                                     return (
-                                        <Typography sx={{ mt: "8px", display: "flex", alignItems: "center", fontSize: "15px", color: "#151515", fontWeight: "500" }}><ArrowForwardIosIcon sx={{ fontSize: "18px", fontWeight: "800", color: "#4dabf5" }} />{ele}</Typography>
+                                        <Typography key={index} sx={{ mt: "8px", display: "flex", alignItems: "center", fontSize: "15px", color: "#151515", fontWeight: "500" }}><ArrowForwardIosIcon sx={{ fontSize: "18px", fontWeight: "800", color: "#4dabf5" }} />{ele}</Typography>
 
                                     )
                                 })
@@ -79,9 +80,9 @@ const LandingFooter = () => {
 
 
                             {
-                                lookingSec.map((ele) => {
+                                lookingSec.map((ele,index) => {
                                     return (
-                                        <Typography sx={{ mt: "8px", display: "flex", alignItems: "center", fontSize: "15px", color: "#151515", fontWeight: "500" }}><ArrowForwardIosIcon sx={{ fontSize: "18px", color: "#4dabf5" }} />{ele}</Typography>
+                                        <Typography key={index} sx={{ mt: "8px", display: "flex", alignItems: "center", fontSize: "15px", color: "#151515", fontWeight: "500" }}><ArrowForwardIosIcon sx={{ fontSize: "18px", color: "#4dabf5" }} />{ele}</Typography>
 
                                     )
                                 })
@@ -97,9 +98,9 @@ const LandingFooter = () => {
 
 
                             {
-                                lookingSec.map((ele) => {
+                                lookingSec.map((ele,index) => {
                                     return (
-                                        <Typography sx={{ mt: "8px", display: "flex", alignItems: "center", fontSize: "15px", color: "#151515", fontWeight: "500" }}><ArrowForwardIosIcon sx={{ fontSize: "18px", color: "#4dabf5" }} />{ele}</Typography>
+                                        <Typography key={index} sx={{ mt: "8px", display: "flex", alignItems: "center", fontSize: "15px", color: "#151515", fontWeight: "500" }}><ArrowForwardIosIcon sx={{ fontSize: "18px", color: "#4dabf5" }} />{ele}</Typography>
 
                                     )
                                 })
@@ -109,29 +110,35 @@ const LandingFooter = () => {
                     </Grid>
                 </Grid>
             </Grid>
+
             <Grid item xs={12} sx={{ border: "1px solid gray", mt: "20px" }}></Grid>
-            <Container disableGutters>
-                <Grid item xs={12} sx={{ mt: "20px", pl: "30px" }}>
+
+
+
+            
+                <Grid item xs={12} >
+
                     <Grid container >
-                        <Grid item xs={12} sm={12} md={12} lg={3}>
-                            <Box sx={{ width: { lg: "300px", md: "300px", sm: "50%", xs: "60%" } }}>
+
+                        <Grid item xs={12} sm={12} md={12} lg={3} sx={{display:"flex",justifyContent:"center",mt:"15px" }}>
+                            <Box sx={{ width: { lg: "300px", md: "300px", sm: "40%", xs: "60%"} }}>
                                 <img src={logo} alt='logo' height="70px" width="100%" />
                             </Box>
                         </Grid>
 
 
 
-                        <Grid item xs={12} sm={7} md={6} lg={5} sx={{ display: "flex", alignItems: "center", mt: "10px" }}>
-                            <Typography align='center' sx={{ display: "flex", alignItems: "center", fontSize: "16px", fontWeight: "600" }}>
+                        <Grid item xs={12} sm={12} md={6} lg={5} sx={{ mt:"15px" ,display: "flex", justifyContent:"center",alignItems: "center"}}>
+                            <Typography align='center' sx={{ display: "flex", alignItems: "center", fontSize:{xs:"14px",sm:"16px",md:"18px",lg:"18px"},fontWeight: "600" }}>
                                 Copyright © 2023 AdelSocial | All rights reserved
                             </Typography>
                         </Grid>
 
 
-                        <Grid item xs={12} sm={5} md={6} lg={4} sx={{ display: "flex", alignItems: "center" }}>
-                            <Grid container spacing={2}>
+                        <Grid item xs={12} sm={5} md={6} lg={4} sx={{ display: "flex", alignItems: "center",mt:"15px" }}>
+                            <Grid container>
 
-                                <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: { xs: "flex-start", }, alignItems: "center" }}>
+                                <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent:"center", alignItems: "center" }}>
                                     <Typography sx={{ color: "#cfcfcf", fontSize: "16px", mr: "15px", whiteSpace: 'nowrap', '&:hover': { color: 'black', cursor: 'pointer' } }}>
                                         Term & Conditions
                                     </Typography>
@@ -139,8 +146,7 @@ const LandingFooter = () => {
                                         Privacy
                                     </Typography>
                                 </Grid>
-
-                                <Grid item xs={12} sm={12} md={6} sx={{ display: "flex" }}>
+                                <Grid item xs={12} sm={12} md={6} sx={{ display: "flex",justifyContent:"space-between" }}>
                                     <Typography>
                                         <FacebookOutlinedIcon sx={{ color: LANDING_COLOR, fontSize: "40px", mr: "20px" }} />
                                     </Typography>
@@ -158,7 +164,6 @@ const LandingFooter = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-            </Container>
         </Grid>
     )
 }

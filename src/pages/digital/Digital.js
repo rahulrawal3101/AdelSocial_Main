@@ -1,17 +1,16 @@
 import { Box, Button, Container, Grid, OutlinedInput, Paper, Typography } from '@mui/material'
 import React from 'react'
-import wordPress from '../../assets/hire-wordpress-developer-banner.jpg'
 import clutch from '../../assets/clutch.png'
-import googleFirm from '../../assets/google-firms.png'
-import hp1 from '../../assets/hp-and.png'
-import hp2 from '../../assets/hp-PernodRicard.png'
-import hp3 from '../../assets/hp-Panasonic.png'
-import hp4 from '../../assets/hp-Ikea-Logo.png'
-import hp5 from '../../assets/hp-Hero-logo.png'
-import javaWeb from '../../assets/Java-Web-Development.webp'
 import digi from '../../assets/digital-marketing-introwebp.webp'
-import Header from '../../components/Header'
+import googleFirm from '../../assets/google-firms.png'
+import wordPress from '../../assets/hire-wordpress-developer-banner.jpg'
+import hp5 from '../../assets/hp-Hero-logo.png'
+import hp4 from '../../assets/hp-Ikea-Logo.png'
+import hp3 from '../../assets/hp-Panasonic.png'
+import hp2 from '../../assets/hp-PernodRicard.png'
+import hp1 from '../../assets/hp-and.png'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import SendMessage from '../../components/SendMessage'
 import { MAIN_COLOR } from '../../constant'
 
@@ -126,7 +125,7 @@ const DigitalMarketing = () => {
 
                     </Grid>
                 </Grid>
-                <Grid item xs={12} lg={4} sx={{ mb: "20px", mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { sm: "block", sm: "block", md: "block", lg: "none" } }}>
+                <Grid item xs={12} lg={4} sx={{ mb: "20px", mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                         <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
                             <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>

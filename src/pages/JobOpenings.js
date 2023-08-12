@@ -215,9 +215,9 @@ const JobOpenings = () => {
     }, [searchSkills]);
 
     return (
-
-        <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
-            <SidebarDrawer currentPage="job" />
+        <>
+            {/* // <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
+        //     <SidebarDrawer currentPage="job" /> */}
             <Header />
             <Grid container sx={{ justifyContent: 'center' }}>
                 <Grid item lg={12} md={12} sm={12} xs={12} sx={{ height: '400px', backgroundImage: `url(${jobOpen})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgb(90,90,90)', backgroundBlendMode: 'multiply' }}>
@@ -285,7 +285,9 @@ const JobOpenings = () => {
                 <SendMessage />
                 <Footer />
             </Grid >
-        </div>
+        </>
+
+
     )
 }
 

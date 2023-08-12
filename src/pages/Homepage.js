@@ -12,31 +12,26 @@ import OurExpertise from '../components/ OurExpertise'
 import SendMessage from '../components/SendMessage'
 import './Homepage.css'
 import CustomModal from '../global/Modal'
-import SidebarDrawer from '../global/SidebarDrawer'
+
+import SideDrawer from '../components/SideDrawer'
 
 const Homepage = () => {
-    const { state, dispatch } = useContext(AdelContext)
-    useEffect(() => {
-        function sizeOfScreen() {
-            dispatch({ type: 'RESIZE', payload: window.innerWidth })
-        }
-        window.addEventListener('resize', sizeOfScreen)
-        return () => window.removeEventListener('resize', sizeOfScreen)
-    }, [])
+    const { dispatch } = useContext(AdelContext)
+
     useEffect(() => {
         setTimeout(() => {
             dispatch({ type: 'MODAL_ACTION', payload: true })
         }, 4000)
-    }, [dispatch])
+    }, [])
 
     return (
-        <div onClick={() => { if (state.drawer_opened) { dispatch({ type: 'DRAWER_CLICKED', payload: true }) } }} >
-            <SidebarDrawer currentPage="Home" />
+        <>
             <CustomModal />
             <Grid container className='mainboxHomepage' sx={{ p: '100px', pb: { lg: '30px', xs: '10px', sm: '30px', md: '30px' }, backgroundImage: `url(${bg})`, backgroundPosition: 'center', backgroundSize: 'cover', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <Grid item>
                     <Header />
                 </Grid>
+                <SideDrawer />
                 <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: '100%' }}>
                     <BannerText />
                 </Grid>
@@ -47,7 +42,8 @@ const Homepage = () => {
             <WebHosting />
             <SendMessage />
             <Footer />
-        </div>
+        </>
+        // </div>
     )
 }
 
